@@ -1,0 +1,54 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #F5B700;
+    --color-secondary: #F9F9F9;
+    --color-bg1: #1A1A1A;
+    --color-bg2: #2A2A2A;
+    --color-surface: #2A2A35;
+
+    --font-h1: 40px;
+    --font-h2: 35px;
+    --font-h3: 30px;
+    --font-h4: 25px;
+    --font-h5: 20px;
+
+    --font-title: "Bebas Neue", sans-serif;
+    --font-body: "Inter", sans-serif;
+
+    --font-weight-regular:400;
+    --font-weight-bold:700;
+
+}
+
+.btn{
+    display: flex;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-text);
+    font-weight: var(--font-weight-bold);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_primary {
+    color: var(--color-bg1);
+    background: var(--color-primary, #F5B700);
+}
+
+.btn_secondary {
+    border: 1px solid var(--color-primary, #F5B700);
+}
+
+.highlight{
+    color: var(--color-primary);
+}
