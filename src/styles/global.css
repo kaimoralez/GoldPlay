@@ -14,7 +14,7 @@
     --color-bg2: #2A2A2A;
     --color-surface: #2A2A35;
 
-    --font-h1: 40px;
+    --font-h1: 65px;
     --font-h2: 35px;
     --font-h3: 30px;
     --font-h4: 25px;
@@ -26,7 +26,6 @@
 
     --font-weight-regular:400;
     --font-weight-bold:700;
-
 }
 
 .btn{
@@ -34,10 +33,11 @@
     padding: 10px 30px;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 10px;
     font-family: var(--font-text);
     font-weight: var(--font-weight-bold);
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
