@@ -18,7 +18,7 @@
         <div class="header__left">
             <img src="../assets/images/logo.svg" alt="logo">
 
-            <nav class="nav">
+            <nav aria-label="Menu principal">
                 <ul class="nav-list">
                     <li class="nav-list__item"><a href="">Início</a></li>
                     <li class="nav-list__item"><a href="">Gênero</a></li>
@@ -31,10 +31,31 @@
         <div class="header__right">
             <form action="/pesquisar" method="get" class="header__search">
                 <input type="search" class="search-input" id="search" required>
+                <button><img src="../assets/images/baseline-search.svg" alt="icon search"></button>
             </form>
-            <button class="btn btn_primary">Entrar</button>
+            <a class="btn btn--primary">Entrar</a>
         </div>
     </header>
+
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__content-text">
+                <h1>Todo o entretenimento em um único lugar</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea
+                    commodo consequat.</p>
+            </div>
+
+            <div class="hero__content-button">
+                <a href="" class="btn btn--primary">Começar agora</a>
+                <a href="" class="btn btn--secondary">Conheça a plataforma</a>
+            </div>
+        </div>
+    </section>
 </body>
+
+
 
 </html>
