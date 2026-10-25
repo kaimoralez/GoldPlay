@@ -46,10 +46,6 @@ header {
 }
 
 .search-input{
-    background-image: url(../assets/images/baseline-search.svg);
-    background-repeat: no-repeat;
-    background-position: right 12px center;
-    background-size:24px;
     padding-right: 3px;
     padding-left: 5px;
 }
