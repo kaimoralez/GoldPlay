@@ -1,7 +1,7 @@
 header {
     display: flex;
     padding: 20px 0;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 260px;
     background-color: transparent;
@@ -35,17 +35,23 @@ header {
 .header__right {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 20px
 }
 
 .header__right form input {
     width: 280px;
     height: 28px;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 5px;
     border: 1px solid var(--color-primary);
 }
 
-.search-input{
-    padding-right: 3px;
-    padding-left: 5px;
+.header__search button {
+    background-color: transparent;
+    cursor: pointer;
 }
