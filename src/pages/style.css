@@ -142,13 +142,16 @@ header {
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
 }
 
 .genres__card {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 249px;
+    width: 100%;
+    max-width: 249px;
     height: 145px;
     border-radius: 20px;
     padding: 81px 5px 17px 21px;
@@ -156,6 +159,11 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.genres__card:hover{
+    transform: scale(1.07);
 }
 
 .genres__card-content {
@@ -175,5 +183,40 @@ header {
     font-family: var(--font-body);
     font-size: var(--font-caption);
     font-weight: var(--font-weight-regular);
+}
 
+.movies {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 50px;
+    gap: 40px;
+    background-color: var(--color-bg2);
+}
+
+.movies__title {
+    font-family: var(--font-title);
+    font-size: var(--font-h2);
+    font-weight: var(--font-weight-regular);
+    text-align: left;
+    color: var(--color-secondary);
+}
+
+.movies__cards{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin: 0 auto;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.movies__card img{
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.movies__card img:hover{
+    transform: scale(1.07);
 }
