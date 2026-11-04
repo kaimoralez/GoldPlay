@@ -31,7 +31,7 @@ header {
 .nav-list__item a {
     font-family: var(--font-body);
     color: var(--color-secondary);
-    font-size: 16px;
+    font-size: var(--font-size-body);
     font-weight: var(--font-weight-regular);
     line-height: normal;
 }
@@ -107,7 +107,7 @@ header {
 .hero__content-text p {
     font-family: var(--font-body);
     color: var(--color-secondary);
-    font-size: var(--font-body);
+    font-size: var(--font-size-body);
 }
 
 .hero__content-button {
@@ -170,7 +170,6 @@ header {
     display: flex;
     flex-direction: column;
     color: var(--color-secondary);
-
 }
 
 .genres__card-title {
@@ -219,4 +218,81 @@ header {
 
 .movies__card img:hover{
     transform: scale(1.07);
+}
+
+.key-differentiators{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg1);
+    padding: 60px 50px;
+    gap: 40px;
+}
+
+.key-differentiators__intro{
+    display: flex;
+    flex-direction: column;
+    width: 321px;
+
+}
+
+.key-differentiators__intro h2{
+    font-family: var(--font-title);
+    font-size: var(--font-h2);
+    font-weight: var(--font-weight-regular);
+    text-align: left;
+    color: var(--color-secondary)
+}
+
+.key-differentiators__intro p{
+    font-family:var(--font-body);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-secondary);
+}
+
+.key-differentiators__cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 auto;
+    row-gap: 20px;
+    column-gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+}
+
+.key-differentiators__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    background-color: var( --color-bg2);
+    padding: 30px 20px;
+    gap: 20px;
+    border-radius: 15px;
+}
+
+.key-differentiators__card img{
+    width: 36px;
+}
+.key-differentiators__card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.key-differentiators__card h4{
+    font-family: var(--font-title);
+    font-size: var(--font-h4);
+    font-weight: var(--font-weight-regular);
+    color: var( --color-secondary);
+}
+
+.key-differentiators__card p{
+    font-family: var(--font-body);
+    font-weight: var( --font-weight-regular);
+    font-size: var(--font-body);
+    color: var( --color-secondary);
+    text-align: center;
 }
